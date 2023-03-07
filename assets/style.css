@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100svh;
+	background: url(edited.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+img{
+	width: 20%;
+	height: 20%;
+	margin: -30px;
+	padding: 0px 50px;
+}
+.bot{
+	padding: 200px;
+}
+.botofbot{
+	background: url(sunset.jpg) no-repeat fixed center center;
+	padding: 20px;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+.quotee{
+	position: relative;
+	font-size: 50px;
+	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	text-transform: capitalize;
+	text-align: center;
+}
+.linkk, a{
+	color: black;
+	position:relative;
+	text-align: center;
+	font-size: 30px;
+	transition: .7s;
+}
+.linkkk:hover{
+	color: white;
+}
+.cheader{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: linear-gradient(rgba(255, 166, 0, 0.3), transparent);
+}
+.header{
+	display: flex;
+	font-size: 30px;
+	flex-direction: row-reverse;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.first-item, .sec-item, .third-item, .fourth-item, .fifth-item{
+	color: white;
+	margin: 40px;
+	text-transform: capitalize;
+	transition: .4s;
+}
+.first-item:hover, .sec-item:hover, .third-item:hover, .fourth-item:hover, .fifth-item:hover{
+	transform: translateY(-10px);
+}
+.first-item:active, .sec-item:active, .third-item:active, .fourth-item:active, .fifth-item:active{
+	transform: scale(.8);
+}
+.top{
+	position: relative;
+}
+span{
+	position: relative;
+	left: -100px;
+	color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	bottom: 140px;
+	font-size: 20px;
+	visibility: hidden;
+	color: white;
+	transition: .6s;
+}
+h1{
+	color: white;
+	font-size:180px;
+	letter-spacing: 20px;
+	text-shadow: 5px 8px rgba(255, 170, 0, 0.5), -5px -8px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 50%;
+	cursor: pointer;
+	bottom: 700px;
+	transform: translate(-50%);
+	transition: 1s;
+}
+h1:hover{
+	rotate: 2deg;
+	scale: 1.1;
+	text-shadow: -4px -7px rgba(255, 170, 0, 0.5), 4px 7px rgba(0, 0, 0, 0.5)
+}
+.po, .so{
+	background-color: white;
+	width: 40px;
+	height: 5px;
+	position: absolute;
+	top: 35px;
+	right: 530px;
+	cursor: progress;
+	transition: .5s;
+}
+.po{
+	animation: animate 2s linear infinite;
+}
+.so{
+	background-color: rgb(195, 195, 195);
+	animation: animate 2s linear infinite reverse;
+}
+@keyframes animate{
+	0%{
+		rotate: -180deg;
+	}
+	100%{
+		rotate: 180deg;
+	}
+}
